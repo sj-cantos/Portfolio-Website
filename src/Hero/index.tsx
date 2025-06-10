@@ -1,5 +1,22 @@
+import { useEffect, useState } from "react";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+
+const TYPING_TEXT = "Shannon John Cantos";
+const TYPING_SPEED = 200; // ms per character
+
 const Hero = () => {
+  const [displayedText, setDisplayedText] = useState("");
+
+  useEffect(() => {
+    let current = 0;
+    const interval = setInterval(() => {
+      setDisplayedText(TYPING_TEXT.slice(0, current + 1));
+      current++;
+      if (current === TYPING_TEXT.length) clearInterval(interval);
+    }, TYPING_SPEED);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <>
       <section
@@ -13,8 +30,15 @@ const Hero = () => {
 
         <div className="container mx-auto px-6 py-12 relative z-10 ">
           <div className="flex flex-col items-center text-center">
-            <h1 className="animate-fadeInUp text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-blue-200 to-purple-200 bg-clip-text text-transparent animate-fadeInUp delay-200">
-              Shannon John Cantos
+            <h1 className="animate-fadeInUp text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-blue-200 to-purple-200 bg-clip-text text-transparent delay-200">
+              {displayedText}
+              <span
+                className="inline-block w-2 h-10 align-middle bg-white ml-1 animate-pulse"
+                style={{
+                  opacity:
+                    displayedText.length === TYPING_TEXT.length ? 0 : 1,
+                }}
+              ></span>
             </h1>
             <h2 className="text-gray-200 font-light text-3xl animate-fadeInUp delay-200 ">
               Software Engineer
