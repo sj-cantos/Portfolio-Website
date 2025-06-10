@@ -1,22 +1,25 @@
 import { useEffect, useState } from "react";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
-
+import {useTypeText} from "../hooks/useTypeText.ts";
 const TYPING_TEXT = "Shannon John Cantos";
-const TYPING_SPEED = 200; // ms per character
+const TYPING_SPEED = 100; // ms per character
 
 const Hero = () => {
-  const [displayedText, setDisplayedText] = useState("");
+  const [paused, setPaused] = useState(false);
+  const typedText = useTypeText(TYPING_TEXT, TYPING_SPEED, 7, paused);
 
   useEffect(() => {
-    let current = 0;
-    const interval = setInterval(() => {
-      setDisplayedText(TYPING_TEXT.slice(0, current + 1));
-      current++;
-      if (current === TYPING_TEXT.length) clearInterval(interval);
-    }, TYPING_SPEED);
-    return () => clearInterval(interval);
-  }, []);
+    const handleMouseEnter = () => setPaused(true);
+    const handleMouseLeave = () => setPaused(false);
 
+    document.addEventListener("mouseenter", handleMouseEnter);
+    document.addEventListener("mouseleave", handleMouseLeave);
+
+    return () => {
+      document.removeEventListener("mouseenter", handleMouseEnter);
+      document.removeEventListener("mouseleave", handleMouseLeave);
+    };
+  }, []);
   return (
     <>
       <section
@@ -31,12 +34,12 @@ const Hero = () => {
         <div className="container mx-auto px-6 py-12 relative z-10 ">
           <div className="flex flex-col items-center text-center">
             <h1 className="animate-fadeInUp text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-blue-200 to-purple-200 bg-clip-text text-transparent delay-200">
-              {displayedText}
+              {typedText}
               <span
                 className="inline-block w-2 h-10 align-middle bg-white ml-1 animate-pulse"
                 style={{
                   opacity:
-                    displayedText.length === TYPING_TEXT.length ? 0 : 1,
+                    typedText.length === TYPING_TEXT.length ? 0 : 1,
                 }}
               ></span>
             </h1>
