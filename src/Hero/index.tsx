@@ -5,21 +5,9 @@ const TYPING_TEXT = "Shannon John Cantos";
 const TYPING_SPEED = 100; // ms per character
 
 const Hero = () => {
-  const [paused, setPaused] = useState(false);
-  const typedText = useTypeText(TYPING_TEXT, TYPING_SPEED, 7, paused);
 
-  useEffect(() => {
-    const handleMouseEnter = () => setPaused(true);
-    const handleMouseLeave = () => setPaused(false);
+  const typedText = useTypeText(TYPING_TEXT, TYPING_SPEED);
 
-    document.addEventListener("mouseenter", handleMouseEnter);
-    document.addEventListener("mouseleave", handleMouseLeave);
-
-    return () => {
-      document.removeEventListener("mouseenter", handleMouseEnter);
-      document.removeEventListener("mouseleave", handleMouseLeave);
-    };
-  }, []);
   return (
     <>
       <section

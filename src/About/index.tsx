@@ -39,7 +39,7 @@ const About = () => {
         <div className="container mx-auto px-6 py-12 text-white flex flex-col items-center">
           <div className="max-w-4xl mx-auto">
             <h2
-              className={`mt-5 text-5xl font-bold mb-4 text-center bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text
+              className={`mt-5 text-5xl font-bold mb-4 text-center bg-gradient-to-r from-blue-400 to-purple-300 text-transparent bg-clip-text
                 animate-slideInLeft delay-400
                 ${aboutInView ? "animate-fadeInUp delay-400" : "opacity-0"}
               `}
