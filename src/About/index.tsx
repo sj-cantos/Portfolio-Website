@@ -43,7 +43,7 @@ const About = () => {
 
   return (
     <>
-      <section className="min-h-screen bg-blue-900">
+      <section id="about" className="min-h-screen bg-blue-900">
         <div className="container mx-auto px-4 md:px-6 py-8 md:py-12 text-white flex flex-col items-center">
           <div ref={aboutRef} className="max-w-4xl mx-auto w-full">
             <h2
@@ -78,20 +78,20 @@ const About = () => {
               </div>
 
               <div className="grid grid-cols-2 gap-6">
-                {aboutData.map((highlight, index) => (
+                {aboutData.map((item, index) => (
                   <div
                     key={index}
                     className={`bg-blue-950 p-6 rounded-lg backdrop-blur-sm border border-gray-600 hover:border-gray-500/50 transition-all duration-500 transform hover:scale-105 hover:shadow-xl group ${aboutInView ? "animate-fadeInUp delay-500" : "opacity-0"}`}
                     style={{ animationDelay: `${0.3 + index * 0.5}s` }}
                   >
                     <div className="mb-4 group-hover:scale-110 transition-transform duration-300">
-                      {highlight.icon}
+                      {item.icon}
                     </div>
                     <h3 className="text-white font-semibold mb-2 group-hover:text-blue-200 transition-colors duration-300">
-                      {highlight.title}
+                      {item.title}
                     </h3>
                     <p className="text-gray-400 text-sm group-hover:text-gray-300 transition-colors duration-300">
-                      {highlight.description}
+                      {item.description}
                     </p>
                   </div>
                 ))}

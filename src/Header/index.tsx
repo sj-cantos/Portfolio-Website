@@ -24,16 +24,16 @@ const Header = () => {
             <a href="" className="duration-300 hover:scale-180 hover:text-blue-400 ">Home</a>
           </li>
           <li>
-            <a href="" className="duration-300 hover:scale-180 hover:text-blue-400 ">About</a>
+            <a href="#about" className="duration-300 hover:scale-180 hover:text-blue-400 ">About</a>
           </li>
           <li>
-            <a href="" className="duration-300 hover:scale-180 hover:text-blue-400 ">Projects</a>
+            <a href="#projects" className="duration-300 hover:scale-180 hover:text-blue-400 ">Projects</a>
           </li>
           <li>
-            <a href="" className="duration-300 hover:scale-180 hover:text-blue-400 ">Skills</a>
+            <a href="#skills" className="duration-300 hover:scale-180 hover:text-blue-400 ">Skills</a>
           </li>
           <li>
-            <a href="" className="duration-300 hover:scale-180 hover:text-blue-400 ">Contact</a>
+            <a href="#contact" className="duration-300 hover:scale-180 hover:text-blue-400 ">Contact</a>
           </li>
         </ul>
       </nav>
