@@ -24,7 +24,7 @@ const Hero = () => {
             <h1 className="animate-fadeInUp text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-blue-200 to-purple-200 bg-clip-text text-transparent delay-200">
               {typedText}
               <span
-                className="inline-block w-2 h-10 align-middle bg-white ml-1 animate-pulse"
+                className="inline-block w-1 h-10 align-middle bg-white ml-1 animate-pulse"
                 style={{
                   opacity:
                     typedText.length === TYPING_TEXT.length ? 0 : 1,
