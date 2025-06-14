@@ -1,6 +1,6 @@
 import React from "react";
 import { Code, Coffee, Lightbulb, Users } from "lucide-react";
-import { useInView } from "../hooks/useInView";
+import { useInView } from "../../hooks/useInView";
 
 interface AboutData {
   icon: React.ReactNode;

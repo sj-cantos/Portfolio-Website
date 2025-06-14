@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
-import {useTypeText} from "../hooks/useTypeText.ts";
+import {useTypeText} from "../../hooks/useTypeText.ts";
 const TYPING_TEXT = "Shannon John Cantos";
 const TYPING_SPEED = 100; // ms per character
 

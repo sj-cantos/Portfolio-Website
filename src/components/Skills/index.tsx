@@ -1,7 +1,7 @@
 import React from "react";
 
-import { useInView } from "../hooks/useInView";
-import { skillsData } from "../data/skillsData";
+import { useInView } from "../../hooks/useInView";
+import { skillsData } from "../../data/skillsData";
 const Skills = () => {
   const [skillsRef, skillsInView] = useInView({ threshold: 0.2 });
 
@@ -19,7 +19,7 @@ const Skills = () => {
           >
             Skills and Technologies
           </h1>
-          <div className={`grid grid-cols-4  p-2 mt-12 gap-5 justify-center `}>
+          <div className={`grid grid-cols-4 md:grid-cols-4  p-2 mt-12 gap-5 justify-center sm:grid-cols-2 `}>
             {skillsData.map((category, index) => {
               return (
                 <div
