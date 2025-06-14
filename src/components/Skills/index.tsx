@@ -13,7 +13,7 @@ const Skills = () => {
           className="container mx-auto px-6 py-12 text-white flex flex-col items-center align-center justify-center"
         >
           <h1
-            className={`mt-5 text-5xl font-bold bg-gradient-to-r from-blue-700 to-purple-600 text-transparent bg-clip-text ${
+            className={`mt-5 text-5xl font-bold bg-gradient-to-r from-blue-700 to-purple-600 text-transparent bg-clip-text pb-2 ${
               skillsInView ? "animate-fadeInUp delay-400" : "opacity-0"
             }`}
           >
