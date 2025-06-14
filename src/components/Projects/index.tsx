@@ -79,7 +79,7 @@ const Projects = () => {
           className="container mx-auto px-6 py-12 text-white flex flex-col items-center align-center justify-center"
         >
           <h1
-            className={`mt-9 text-6xl font-bold bg-gradient-to-r from-blue-700 to-purple-600 text-transparent bg-clip-text leading-[1.1] pb-2 ${
+            className={`mt-9 text-5xl font-bold bg-gradient-to-r from-sky-400 to-purple-500 bg-clip-text text-transparent leading-[1.1] pb-2 ${
               projectsInView ? "animate-fadeInUp delay-400" : "opacity-0"
             }`}
           >
@@ -89,7 +89,7 @@ const Projects = () => {
             {projects.map((project, index) => {
               return (
                 <div
-                  className={`bg-gray-800 overflow-hidden rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-shadow duration-300 flex flex-col gap-3 ${
+                  className={`bg-blue-950 overflow-hidden rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-shadow duration-300 flex flex-col gap-3 ${
                     projectsInView ? "animate-fadeInUp delay-400" : "opacity-0"
                   }`}
                   style={{ animationDelay: `${index * 300}ms` }}
@@ -107,7 +107,7 @@ const Projects = () => {
                         {project.technologies.map((tech, techIndex) => (
                           <div
                             key={techIndex}
-                            className=" bg-gray-600 rounded-xl p-1 px-1.5 flex gap-0.5"
+                            className=" bg-gradient-to-r from-blue-600/20 to-purple-600/20 text-blue-200 rounded-full text-sm font-medium border border-blue-500/30 hover:border-blue-400/50 hover:from-blue-600/30 hover:to-purple-600/30 transition-all duration-300 transform hover:scale-105  rounded-xl p-1 px-1.5 flex gap-0.5"
                           >
                             <TechLogo tech={tech} size={16} />
                             {tech}
