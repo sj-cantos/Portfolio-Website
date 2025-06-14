@@ -19,7 +19,7 @@ const Skills = () => {
           >
             Skills and Technologies
           </h1>
-          <div className={`grid grid-cols-4 md:grid-cols-4  p-2 mt-12 gap-5 justify-center sm:grid-cols-2 `}>
+          <div className={`grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-8`}>
             {skillsData.map((category, index) => {
               return (
                 <div
