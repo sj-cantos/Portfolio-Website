@@ -25,11 +25,10 @@ import {
   MessageSquareCode,
   ArrowUpDown,
 } from "lucide-react";
+import type { Skills } from "../types/types";
 
 
-
-
-export const skillsData = [
+export const skillsData: Skills[] = [
   {
     title: "Front-end",
     icon: <Code2 className="h-6 w-6 text-green-600" size={1} />,
