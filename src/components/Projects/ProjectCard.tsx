@@ -1,4 +1,4 @@
-import React from "react";
+
 import { Zoom } from 'react-slideshow-image';
 import TechLogo from "../../TechLogo";
 import 'react-slideshow-image/dist/styles.css';

@@ -1,9 +1,4 @@
-import React from "react";
-
 import { useInView } from "../../hooks/useInView";
-import { skillsData } from "../../data/skillsData";
-import TechLogo from "../../TechLogo";
-
 import ProjectCard from "./ProjectCard"; // Importing the ProjectCard component
 import {projects} from "../../data/projectsData";
 const Projects = () => {

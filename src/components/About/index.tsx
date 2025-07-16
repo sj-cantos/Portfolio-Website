@@ -1,5 +1,3 @@
-import React from "react";
-import { Code, Coffee, Lightbulb, Users } from "lucide-react";
 import { useInView } from "../../hooks/useInView";
 import aboutData from "../../data/aboutData";
 const About = () => {
