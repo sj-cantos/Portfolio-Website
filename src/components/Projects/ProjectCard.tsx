@@ -8,7 +8,7 @@ import type { Project } from '../../types/types';
 function ProjectCard({ project, inView, index }: { project: Project; inView: boolean; index: number }) {
     return (
         <div
-            className={`bg-blue-950 overflow-hidden rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-shadow duration-300 flex flex-col gap-3 ${inView ? "animate-fadeInUp delay-400" : "opacity-0"
+            className={`bg-blue-950/80 overflow-hidden rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-shadow duration-300 flex flex-col gap-3 ${inView ? "animate-fadeInUp delay-400" : "opacity-0"
                 }`}
             style={{ animationDelay: `${index * 300}ms` }}
         >
