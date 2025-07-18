@@ -1,14 +1,9 @@
-
 import { Zoom } from 'react-slideshow-image';
+import { ExternalLink, Github } from 'lucide-react';
 import TechLogo from "../../TechLogo";
 import 'react-slideshow-image/dist/styles.css';
+import type { Project } from '../../types/types';
 
-interface Project {
-    title: string;
-    images: string[];
-    description: string;
-    technologies: string[];
-}
 
 function ProjectCard({ project, inView, index }: { project: Project; inView: boolean; index: number }) {
     return (
@@ -40,7 +35,7 @@ function ProjectCard({ project, inView, index }: { project: Project; inView: boo
                     ))}
                 </Zoom>
             </div>
-            <div className="p-6 flex flex-col gap-3">
+            <div className="p-6 flex flex-col justify-between gap-3 flex-1">
                 <h2 className="text-xl font-semibold">{project.title}</h2>
                 <p className="text-gray-400">{project.description}</p>
                 <div>
@@ -48,13 +43,38 @@ function ProjectCard({ project, inView, index }: { project: Project; inView: boo
                         {project.technologies.map((tech, techIndex) => (
                             <div
                                 key={techIndex}
-                                className=" bg-gradient-to-r from-blue-600/20 to-purple-600/20 text-blue-200 text-sm font-medium border border-blue-500/30 hover:border-blue-400/50 hover:from-blue-600/30 hover:to-purple-600/30 transition-all duration-300 transform hover:scale-105  rounded-xl p-1 px-1.5 flex gap-0.5"
+                                className=" bg-blue-950 text-blue-200 text-sm font-medium border border-blue-500/30 hover:border-blue-400/50 hover:from-blue-600/30 hover:to-purple-600/30 transition-all duration-300 transform hover:scale-105  rounded-xl p-1 px-1.5 flex gap-0.5"
                             >
                                 <TechLogo tech={tech} size={16} />
                                 {tech}
                             </div>
                         ))}
                     </div>
+                </div>
+                {/* Links at the bottom */}
+                <div className="flex align-center justify-between mt-1 pt-2 border-t border-blue-800">
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-400 hover:text-blue-400 transition"
+                      aria-label="GitHub"
+                    >
+                      <Github size={22} />
+                    </a>
+                  )}
+                  {project.external && (
+                    <a
+                      href={project.external}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-400 hover:text-blue-400 transition"
+                      aria-label="External Link"
+                    >
+                      <ExternalLink size={22} />
+                    </a>
+                  )}
                 </div>
             </div>
         </div>

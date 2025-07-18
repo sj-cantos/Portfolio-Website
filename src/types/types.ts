@@ -1,8 +1,10 @@
 interface Project {
-  title: string;
-  images: string[]; // Optional image property
-  description: string;
-  technologies: string[];
+    title: string;
+    images: string[];
+    description: string;
+    technologies: string[];
+    github?: string;
+    external?: string;
 }
 interface AboutData {
   icon: React.ReactNode;

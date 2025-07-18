@@ -18,6 +18,8 @@ export const projects: Project[] = [
       "Tailwind CSS",
       "Mapbox API",
     ],
+    github: "https://github.com/example/hydromaze-app",
+    external: "https://hydromaze-app.example.com"
   },
   {
     title: "HydroMaze Admin Dashboard",
@@ -36,6 +38,8 @@ export const projects: Project[] = [
       "Chart.js",
       "Mapbox API",
     ],
+    github: "https://github.com/example/hydromaze-admin",
+    external: "https://hydromaze-admin.example.com"
   },
   {
     title: "Hotel Reservation System",
@@ -45,6 +49,8 @@ export const projects: Project[] = [
     description:
       "A full-stack web-based application for managing hotel bookings, providing an intuitive interface for customers to reserve rooms online.",
     technologies: ["React.js", "Node.js", "MySQL", "Express.js", "Chart.js"],
+    github: "https://github.com/example/hotel-reservation",
+    external: "https://hotel-reservation.example.com"
   },
   {
     title: "Books API",
@@ -61,6 +67,8 @@ export const projects: Project[] = [
       "JUnit",
       "Docker",
     ],
+    github: "https://github.com/example/books-api",
+    external: "https://books-api.example.com"
   },
   // Add more projects as needed
 ];
