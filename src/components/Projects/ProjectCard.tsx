@@ -48,7 +48,7 @@ function ProjectCard({ project, inView, index }: { project: Project; inView: boo
                         {project.technologies.map((tech, techIndex) => (
                             <div
                                 key={techIndex}
-                                className=" bg-gradient-to-r from-blue-600/20 to-purple-600/20 text-blue-200 rounded-full text-sm font-medium border border-blue-500/30 hover:border-blue-400/50 hover:from-blue-600/30 hover:to-purple-600/30 transition-all duration-300 transform hover:scale-105  rounded-xl p-1 px-1.5 flex gap-0.5"
+                                className=" bg-gradient-to-r from-blue-600/20 to-purple-600/20 text-blue-200 text-sm font-medium border border-blue-500/30 hover:border-blue-400/50 hover:from-blue-600/30 hover:to-purple-600/30 transition-all duration-300 transform hover:scale-105  rounded-xl p-1 px-1.5 flex gap-0.5"
                             >
                                 <TechLogo tech={tech} size={16} />
                                 {tech}
