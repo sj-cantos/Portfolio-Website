@@ -6,7 +6,7 @@ interface TechLogoProps {
 const TechLogo: React.FC<TechLogoProps> = ({ tech, size }) => {
   const logoMap: { [key: string]: string } = {
     // Frontend
-   "React.js":
+    "React.js":
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
     "Next.js":
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
@@ -109,6 +109,12 @@ const TechLogo: React.FC<TechLogoProps> = ({ tech, size }) => {
       "https://res.cloudinary.com/cloudinary-marketing/image/upload/f_auto,q_auto/v1599098500/creative_source/Logo/Cloud%20Glyph/cloudinary_cloud_glyph_blue.svg",
     "JWT":
       "https://cdn.worldvectorlogo.com/logos/jwt-3.svg",
+    "Mapbox API":
+      "https://upload.wikimedia.org/wikipedia/commons/1/1f/Mapbox_logo_2019.svg",
+    "Java":
+      "https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg",
+    "Hibernate":
+      "https://hibernate.org/images/hibernate-logo.svg"
   };
   const logoUrl = logoMap[tech]; // Fallback if tech not found
   return (

@@ -64,7 +64,6 @@ export const projects: Project[] = [
       "Java",
       "PostgreSQL",
       "Hibernate",
-      "JUnit",
       "Docker",
     ],
     github: "https://github.com/example/books-api",
