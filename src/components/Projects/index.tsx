@@ -14,7 +14,7 @@ const Projects = () => {
           className="container mx-auto px-6 py-12 text-white flex flex-col items-center align-center justify-center"
         >
           <h1
-            className={`mt-9 text-5xl font-bold bg-gradient-to-r from-sky-400 to-purple-500 bg-clip-text text-transparent leading-[1.1] pb-2 ${
+            className={`z-2 mt-9 text-5xl font-bold bg-gradient-to-r from-sky-400 to-purple-500 bg-clip-text text-transparent leading-[1.1] pb-2 ${
               projectsInView ? "animate-fadeInUp delay-400" : "opacity-0"
             }`}
           >

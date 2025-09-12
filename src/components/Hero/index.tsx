@@ -11,14 +11,14 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className="min-h-screen flex items-center justify-center relative overflow-hidden -z-10"
+        className="min-h-screen flex items-center justify-center relative "
       >
         {/* Animated Background */}
         <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(59,130,246,0.1),transparent_70%)]"></div>
         </div>
 
-        <div className="container mx-auto px-6 py-12 relative z-10 ">
+        <div className="container mx-auto px-6 py-12 relative  ">
           <div className="flex flex-col items-center text-center">
             <h1 className="animate-fadeInUp text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-blue-200 to-purple-200 bg-clip-text text-transparent delay-200">
               {typedText}
@@ -38,7 +38,7 @@ const Hero = () => {
               Passionate about clean code, innovative solutions, and building
               products that make a difference.
             </p>
-            <div className="flex space-x-4 mt-10 animate-fadeInUp delay-400">
+            <div className="flex space-x-4 mt-10 animate-fadeInUp delay-400 ">
               <a
                 href="projects"
                 className="text-gray-100 bg-gradient-to-r from-blue-600 to-purple-500 py-3 px-8 rounded-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl"
@@ -55,9 +55,8 @@ const Hero = () => {
           </div>
           <div className="flex space-x-6 mt-8 justify-center animate-fadeInUp delay-600">
             <a
-              href="https://github.com/sjcantos"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="https://github.com/sj-cantos"
+      
             >
               <Github
                 className="text-gray-400 hover:scale-110 transition-all duration-200 ease-in-out"

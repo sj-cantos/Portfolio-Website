@@ -12,7 +12,7 @@ const FloatingElements: React.FC = () => {
   ];
 
   return (
-    <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+    <div className="fixed inset-0 pointer-events-none z-1 overflow-hidden">
       {elements.map((Element, index) => (
         <div
           key={index}

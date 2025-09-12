@@ -19,7 +19,7 @@ export const projects: Project[] = [
       "Mapbox API",
     ],
     github: "https://github.com/example/hydromaze-app",
-    external: "https://hydromaze-app.example.com"
+    external: "https://hydromaze-water-refilling.vercel.app/"
   },
   {
     title: "HydroMaze Admin Dashboard",
