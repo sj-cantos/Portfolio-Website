@@ -18,7 +18,7 @@ export const projects: Project[] = [
       "Tailwind CSS",
       "Mapbox API",
     ],
-    github: "https://github.com/example/hydromaze-app",
+    github: "https://github.com/sj-cantos/Water-Refilling-Management-System-Customer-Side",
     external: "https://hydromaze-water-refilling.vercel.app/"
   },
   {
@@ -40,8 +40,8 @@ export const projects: Project[] = [
       "Chart.js",
       "Mapbox API",
     ],
-    github: "https://github.com/example/hydromaze-admin",
-    external: "https://hydromaze-admin.example.com"
+    github: "https://github.com/sj-cantos/HydroMaze-Admin",
+    external: "http://18.142.228.168:8080/"
   },
   {
     title: "Hotel Reservation System",
@@ -51,7 +51,7 @@ export const projects: Project[] = [
     description:
       "A full-stack web-based application for managing hotel bookings, providing an intuitive interface for customers to reserve rooms online.",
     technologies: ["React.js", "Node.js", "MySQL", "Express.js", "Chart.js"],
-    github: "https://github.com/example/hotel-reservation",
+    github: "https://github.com/sj-cantos/HBMS-Customer-Side",
     external: "https://hotel-reservation.example.com"
   },
   {
@@ -68,8 +68,8 @@ export const projects: Project[] = [
       "Hibernate",
       "Docker",
     ],
-    github: "https://github.com/example/books-api",
-    external: "https://books-api.example.com"
+    github: "https://github.com/sj-cantos/Books-API-with-Spring-Boot",
+    // external: "https://books-api.example.com"
   },
   // Add more projects as needed
 ];
