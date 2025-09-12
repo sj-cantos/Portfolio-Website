@@ -24,8 +24,10 @@ export const projects: Project[] = [
   {
     title: "HydroMaze Admin Dashboard",
     images: [
-      "/assets/hydromaze.png",
-      "/assets/hydromaze2.png"
+      "/assets/hydromaze-admin1.png",
+      "/assets/hydromaze-admin2.png",
+      "/assets/hydromaze-admin3.png",
+      "/assets/hydromaze-admin4.png"
     ],
     description:
       "A full-stack web-based admin dashboard for managing the water refilling station, providing insights into customer orders and inventory.",
