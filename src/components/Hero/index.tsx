@@ -40,7 +40,7 @@ const Hero = () => {
             </p>
             <div className="flex space-x-4 mt-10 animate-fadeInUp delay-400">
               <a
-                href=""
+                href="projects"
                 className="text-gray-100 bg-gradient-to-r from-blue-600 to-purple-500 py-3 px-8 rounded-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl"
               >
                 View My Work
@@ -55,7 +55,7 @@ const Hero = () => {
           </div>
           <div className="flex space-x-6 mt-8 justify-center animate-fadeInUp delay-600">
             <a
-              href="https://github.com/shannoncantos"
+              href="https://github.com/sjcantos"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -65,7 +65,7 @@ const Hero = () => {
               />
             </a>
             <a
-              href="https://www.linkedin.com/in/shannoncantos/"
+              href="https://www.linkedin.com/in/sjcantos/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -75,7 +75,7 @@ const Hero = () => {
               />
             </a>
             <a
-              href="mailto:shannoncantos@example.com"
+              href="mailto:shanjohncantz@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
             >
