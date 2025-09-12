@@ -56,7 +56,8 @@ const Hero = () => {
           <div className="flex space-x-6 mt-8 justify-center animate-fadeInUp delay-600">
             <a
               href="https://github.com/sj-cantos"
-      
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <Github
                 className="text-gray-400 hover:scale-110 transition-all duration-200 ease-in-out"
@@ -64,7 +65,7 @@ const Hero = () => {
               />
             </a>
             <a
-              href="https://www.linkedin.com/in/sjcantos/"
+              href="https://www.linkedin.com/in/sj-cantos/"
               target="_blank"
               rel="noopener noreferrer"
             >
