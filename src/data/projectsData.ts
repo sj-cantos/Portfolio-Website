@@ -2,7 +2,7 @@ import type { Project } from "../types/types";
 
 export const projects: Project[] = [
   {
-    title: "HydroMaze App",
+    title: "HydroMaze Customers App",
     images: [
       "/assets/hydromaze.png",
       "/assets/hydromaze2.png",
@@ -39,6 +39,8 @@ export const projects: Project[] = [
       "Tailwind CSS",
       "Chart.js",
       "Mapbox API",
+      "Docker",
+      "GitHub Actions"
     ],
     github: "https://github.com/sj-cantos/HydroMaze-Admin",
     external: "http://18.142.228.168:8080/"
@@ -46,7 +48,10 @@ export const projects: Project[] = [
   {
     title: "Hotel Reservation System",
     images: [
-      "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "/assets/hotel booking.PNG",
+      "/assets/hotel booking 2.PNG",
+      "/assets/hotel booking 3.PNG",
+      "/assets/hotel booking 4.PNG"
     ],
     description:
       "A full-stack web-based application for managing hotel bookings, providing an intuitive interface for customers to reserve rooms online.",
@@ -55,7 +60,7 @@ export const projects: Project[] = [
     external: "https://hotel-reservation.example.com"
   },
   {
-    title: "Books API",
+    title: "Library Management System API",
     images: [
       "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800",
     ],

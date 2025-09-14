@@ -67,6 +67,8 @@ const TechLogo: React.FC<TechLogoProps> = ({ tech, size }) => {
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
     "GitHub":
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+      "GitHub Actions":
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
     "VS Code":
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
     "Figma":
