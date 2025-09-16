@@ -40,7 +40,7 @@ const Hero = () => {
             </p>
             <div className="flex space-x-4 mt-10 animate-fadeInUp delay-400 ">
               <a
-                href="projects"
+                href="#projects"
                 className="text-gray-100 bg-gradient-to-r from-blue-600 to-purple-500 py-3 px-8 rounded-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl"
               >
                 View My Work
