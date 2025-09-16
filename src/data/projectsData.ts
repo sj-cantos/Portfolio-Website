@@ -56,8 +56,8 @@ export const projects: Project[] = [
     description:
       "A full-stack web-based application for managing hotel bookings, providing an intuitive interface for customers to reserve rooms online.",
     technologies: ["React.js", "Node.js", "MySQL", "Express.js", "Chart.js"],
-    github: "https://github.com/sj-cantos/HBMS-Customer-Side",
-    external: "https://hotel-reservation.example.com"
+    github: "https://github.com/sj-cantos/Hotel-Reservation-Customer-Side",
+    external: "https://hotel-reservation-client.onrender.com/"
   },
   {
     title: "Library Management System API",
